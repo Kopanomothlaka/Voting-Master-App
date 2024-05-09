@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VotingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                >
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/backhome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="left|center"
+                        android:src="@drawable/back"/>
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Voting Results"
+                        android:layout_gravity="center"
+
+                        android:textColor="@color/green"
+                        android:fontFamily="@font/poppiesregular"
+                        android:layout_marginLeft="0dp"
+                        android:textSize="20dp" />
+
+
+
+                </FrameLayout>
+
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="17dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check if your vote was counted"
+                android:textColor="@color/green"
+                android:fontFamily="@font/poppiesregular"
+
+                android:textSize="15dp"/>
+
+            <ImageView
+                android:id="@+id/imageViewVote"
+                android:layout_width="wrap_content"
+                android:layout_height="273dp"
+                android:src="@drawable/table"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Votes Calculator"
+                android:fontFamily="@font/poppinsbold"
+                android:textSize="25sp"
+                android:layout_gravity="center"
+                android:textColor="@color/green"
+                android:layout_marginTop="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You can calculate number of votes for the organisation you voted for and others.The length and height is provided in the above picture ."
+                android:textSize="13sp"
+                android:textColor="@color/green"
+                android:fontFamily="@font/poppiesregular"/>
+
+               <FrameLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/botton_bg"
+                   >
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Total  Area  : 12cmSqrd = Total Votes : 50"
+                       android:fontFamily="@font/poppinsmedium"
+                       android:textSize="15sp"
+                       android:layout_gravity="center"
+                       android:textColor="@color/white"
+                       android:layout_margin="15dp"/>
+
+
+               </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Length :"
+                    android:fontFamily="@font/poppiesregular"
+                    android:textColor="@color/green"/>
+                <EditText
+                    android:id="@+id/lengthID"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:padding="5dp"
+                    android:textColor="@color/green"
+                    android:inputType="text"
+                    android:background="@drawable/editext_bg"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Height :"
+                    android:fontFamily="@font/poppiesregular"
+                    android:textColor="@color/green"/>
+                <EditText
+                    android:id="@+id/heightID"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:padding="5dp"
+                    android:inputType="text"
+                    android:textColor="@color/green"
+                    android:background="@drawable/editext_bg"/>
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/calculateID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CALCULATE"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppinsbold"
+                android:background="@drawable/botton_bg"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/results"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppinsbold"
+                    android:textColor="@color/green"/>
+
+
+
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

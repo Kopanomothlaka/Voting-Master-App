@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/green"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            >
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/logo"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Register to Vote"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="55dp"
+                    android:textSize="20dp"/>
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:background="@drawable/background_cut"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppiesregular"
+                android:text="Full name :"
+                android:textColor="@color/green" />
+
+            <EditText
+                android:id="@+id/fullnameet"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="@drawable/editext_bg"
+                android:padding="5dp"
+                android:textColor="@color/green" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppiesregular"
+                android:text="ID number :"
+                android:textColor="@color/green" />
+
+            <EditText
+                android:id="@+id/idnumber"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="@drawable/editext_bg"
+                android:padding="5dp"
+                android:textColor="@color/green" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppiesregular"
+                android:text="Email :"
+                android:textColor="@color/green" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="@drawable/editext_bg"
+                android:inputType="textEmailAddress"
+                android:padding="5dp"
+                android:textColor="@color/green" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppiesregular"
+                android:text="Password :"
+                android:textColor="@color/green" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="@drawable/editext_bg"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:textColor="@color/green" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppiesregular"
+                android:text="Confirm password :"
+                android:textColor="@color/green" />
+
+            <EditText
+                android:id="@+id/confirmpass"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="@drawable/editext_bg"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:textColor="@color/green" />
+
+
+            <Button
+                android:id="@+id/registerID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/botton_bg"
+                android:backgroundTint="@color/green"
+                android:fontFamily="@font/poppinsbold"
+                android:text="REGISTER" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

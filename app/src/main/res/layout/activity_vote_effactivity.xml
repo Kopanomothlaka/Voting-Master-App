@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".voteEFFActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            >
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/backhome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="left|center"
+                    android:src="@drawable/back"/>
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EFF"
+                    android:layout_gravity="center"
+
+                    android:textColor="@color/green"
+                    android:fontFamily="@font/poppinsbold"
+                    android:layout_marginLeft="0dp"
+                    android:textSize="20dp" />
+
+
+
+            </FrameLayout>
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter the code you received during registration in order to  vote ."
+            android:textColor="@color/green"
+            android:fontFamily="@font/poppiesregular"
+            android:layout_gravity="center"
+            android:textSize="19dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Code :"
+            android:textColor="@color/green"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppinsbold"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/codeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:inputType="number"
+            android:padding="8dp"
+            android:textColor="@color/green"
+            android:background="@drawable/editext_bg"/>
+        <Button
+
+            android:id="@+id/voteCodeEFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botton_bg"
+            android:layout_marginTop="19dp"
+            android:text="VOTE"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

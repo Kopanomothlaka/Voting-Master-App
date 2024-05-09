@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "214861664467",
+    "project_id": "votemaster-990a8",
+    "storage_bucket": "votemaster-990a8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:214861664467:android:b314f96f33788c4e870426",
+        "android_client_info": {
+          "package_name": "com.example.votemaster"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0IELMM2vr7z2nSToNNyP4wvIVqeF4q_E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
